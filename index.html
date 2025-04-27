@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website</title>
+  <style>
+    @keyframes gradientBG {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradientBG 10s ease infinite;
+    }
+    </style>
+    <!-- Hide Scrollbar (Tailwind) -->
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-[#3F72AF] shadow-md fixed w-full z-50 top-0 left-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-2xl font-bold text-[#F9F7F7] tracking-wide">Fine Store</a>
+        </div>
+  
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="#" class="text-[#F9F7F7] hover:text-indigo-200 transition">Home</a>
+          <a href="#products" class="text-[#F9F7F7] hover:text-indigo-200 transition">Products</a>
+          <a href="#deals" class="text-[#F9F7F7] hover:text-indigo-200 transition">Deals</a>
+          <a href="#plan" class="text-[#F9F7F7] hover:text-indigo-200 transition">Plan</a>
+          <a href="#chooseus" class="text-[#F9F7F7] hover:text-indigo-200 transition">Why choose us</a>
+          <a href="#contact" class="text-[#F9F7F7] hover:text-indigo-200 transition">Contact</a>
+        </div>
+  
+        <!-- Login Button -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#"
+             class="bg-[#F9F7F7] text-[#3F72AF] px-4 py-2 rounded-lg font-semibold text-sm hover:bg-white transition">
+            Login
+          </a>
+        </div>
+  
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-[#F9F7F7] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                 viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 pt-2 space-y-2 bg-[#3F72AF] shadow">
+      <a href="#" class="block text-[#F9F7F7] hover:text-indigo-200">Home</a>
+      <a href="#" class="block text-[#F9F7F7] hover:text-indigo-200">Shop</a>
+      <a href="#" class="block text-[#F9F7F7] hover:text-indigo-200">Deals</a>
+      <a href="#" class="block text-[#F9F7F7] hover:text-indigo-200">Contact</a>
+      <a href="#"
+         class="block text-center bg-[#F9F7F7] text-[#3F72AF] px-4 py-2 rounded-lg font-semibold text-sm hover:bg-white transition">
+        Login
+      </a>
+    </div>
+  </nav>
+  
+   
+
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-r from-[#DBE2EF] via-[#DBE2EF] to-[#A9B9D6] animate-gradient">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-br from-white/40 to-white/10 backdrop-blur-sm"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-6">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-[#112D4E] mb-6">
+      Discover Your Perfect Tech at <span class="text-indigo-500">Fine Store</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+      Explore premium gadgets, amazing deals, and exclusive products, all in one place.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#shop" class="px-6 py-3 bg-[#112D4E] text-white font-semibold rounded-lg shadow hover:bg-indigo-800 transition">
+        Shop Now
+      </a>
+      <a href="#deals" class="px-6 py-3 bg-white text-[#112D4E] border border-[#112D4E] font-semibold rounded-lg hover:bg-gray-100 transition">
+        View Deals
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Products Section -->
+<!-- Products Section -->
+<section id="products" class="py-20 bg-[#3F72AF]">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Featured Products</h2>
+    <p class="text-blue-100 mb-12 max-w-xl mx-auto">
+      Explore our best-selling tech gadgets, curated just for you.
+    </p>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Product Card -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="headphones.webp"   style="height: 330px; width: 400px; "   alt="Wireless Headphones" class="w-full object-cover h-56">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold text-[#3F72AF] mb-2">Wireless Headphones</h3>
+          <p class="text-gray-600 mb-4">Experience crystal-clear sound and ultimate comfort.</p>
+          <span class="text-[#3F72AF] font-bold text-lg block mb-4">$129.99</span>
+          <div class="flex gap-3">
+            <button class="bg-[#3F72AF] text-white px-4 py-2 rounded-md hover:bg-[#2c5b91] transition w-full">Add to Cart</button>
+            <button class="bg-[#F9F7F7] text-[#3F72AF] px-4 py-2 rounded-md hover:bg-white transition w-full">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="watch.jfif" style="height: 330px;" alt="Smartwatch Pro" class="w-full object-cover h-56">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold text-[#3F72AF] mb-2">Smartwatch Pro</h3>
+          <p class="text-gray-600 mb-4">Stay connected and track your fitness in style.</p>
+          <span class="text-[#3F72AF] font-bold text-lg block mb-4">$199.99</span>
+          <div class="flex gap-3">
+            <button class="bg-[#3F72AF] text-white px-4 py-2 rounded-md hover:bg-[#2c5b91] transition w-full">Add to Cart</button>
+            <button class="bg-[#F9F7F7] text-[#3F72AF] px-4 py-2 rounded-md hover:bg-white transition w-full">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="drone.jfif" style="height: 330px;" alt="Ultra HD Drone" class="w-full object-cover h-56">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold text-[#3F72AF] mb-2">Ultra HD Drone</h3>
+          <p class="text-gray-600 mb-4">Capture your adventures in stunning 4K resolution.</p>
+          <span class="text-[#3F72AF] font-bold text-lg block mb-4">$349.99</span>
+          <div class="flex gap-3">
+            <button class="bg-[#3F72AF] text-white px-4 py-2 rounded-md hover:bg-[#2c5b91] transition w-full">Add to Cart</button>
+            <button class="bg-[#F9F7F7] text-[#3F72AF] px-4 py-2 rounded-md hover:bg-white transition w-full">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Product Slider Section -->
+<section id="deals" class="py-20 bg-[#F9F7F7]">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#112D4E] mb-6 text-center">Top Picks for You</h2>
+
+    <!-- Slider Wrapper -->
+    <div class="relative">
+      <!-- Scroll Buttons -->
+      <button onclick="slideLeft()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#112D4E] text-white p-3 rounded-full shadow hover:bg-[#3F72AF] transition z-10">
+        &#10094;
+      </button>
+      <button onclick="slideRight()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#112D4E] text-white p-3 rounded-full shadow hover:bg-[#3F72AF] transition z-10">
+        &#10095;
+      </button>
+
+      <!-- Cards Container -->
+      <div id="product-slider" class="flex gap-6 overflow-x-auto scroll-smooth px-2 py-4 no-scrollbar">
+        
+        <!-- Product Card -->
+        <div class="min-w-[280px] bg-white rounded-xl shadow-md hover:shadow-xl transition">
+          <img src="mouse1.jfif" alt="Tech Product" class="w-full h-40 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-[#3F72AF]">Smart Speaker</h3>
+            <p class="text-sm text-gray-600 mb-2">Voice-controlled convenience with rich sound.</p>
+            <span class="font-bold text-[#3F72AF]">$89.99</span>
+          </div>
+        </div>
+
+        <!-- Repeat or Loop Cards -->
+        <div class="min-w-[280px] bg-white rounded-xl shadow-md hover:shadow-xl transition">
+          <img src="mouse2.jfif" alt="Tech Product" class="w-full h-40 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-[#3F72AF]">Gaming Mouse</h3>
+            <p class="text-sm text-gray-600 mb-2">Precision and comfort for all-day gaming.</p>
+            <span class="font-bold text-[#3F72AF]">$59.99</span>
+          </div>
+        </div>
+
+        <!-- Add more cards here... -->
+        <div class="min-w-[280px] bg-white rounded-xl shadow-md hover:shadow-xl transition">
+          <img src="mouse3.jfif" alt="Tech Product" class="w-full h-40 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-[#3F72AF]">Gaming Mouse</h3>
+            <p class="text-sm text-gray-600 mb-2">Precision and comfort for all-day gaming.</p>
+            <span class="font-bold text-[#3F72AF]">$59.99</span>
+          </div>
+        </div>
+
+        <div class="min-w-[280px] bg-white rounded-xl shadow-md hover:shadow-xl transition">
+          <img src="mouse4.jfif" alt="Tech Product" class="w-full h-40 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-[#3F72AF]">Gaming Mouse</h3>
+            <p class="text-sm text-gray-600 mb-2">Precision and comfort for all-day gaming.</p>
+            <span class="font-bold text-[#3F72AF]">$59.99</span>
+          </div>
+        </div>
+
+        <div class="min-w-[280px] bg-white rounded-xl shadow-md hover:shadow-xl transition">
+          <img src="mouse5.jfif" alt="Tech Product" class="w-full h-40 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-[#3F72AF]">Gaming Mouse</h3>
+            <p class="text-sm text-gray-600 mb-2">Precision and comfort for all-day gaming.</p>
+            <span class="font-bold text-[#3F72AF]">$59.99</span>
+          </div>
+        </div>
+
+        <div class="min-w-[280px] bg-white rounded-xl shadow-md hover:shadow-xl transition">
+          <img src="mouse6.jfif" alt="Tech Product" class="w-full h-40 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-[#3F72AF]">Gaming Mouse</h3>
+            <p class="text-sm text-gray-600 mb-2">Precision and comfort for all-day gaming.</p>
+            <span class="font-bold text-[#3F72AF]">$59.99</span>
+          </div>
+        </div>
+
+        <div class="min-w-[280px] bg-white rounded-xl shadow-md hover:shadow-xl transition">
+          <img src="mouse7.jfif" alt="Tech Product" class="w-full h-40 object-cover rounded-t-xl">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-[#3F72AF]">Gaming Mouse</h3>
+            <p class="text-sm text-gray-600 mb-2">Precision and comfort for all-day gaming.</p>
+            <span class="font-bold text-[#3F72AF]">$59.99</span>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for Slider -->
+
+
+
+
+<!-- Why Choose Us Section -->
+<section id="chooseus" class="bg-[#3F72AF] py-20 text-[#DBE2EF]">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Why Choose Fine Store?</h2>
+    <p class="text-lg max-w-3xl mx-auto mb-12 opacity-90">
+      We combine the latest technology, unbeatable prices, and exceptional customer service to create a shopping experience you can rely on.
+    </p>
+
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Feature 1 -->
+      <div class="bg-[#F9F7F7] text-[#112D4E] rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Premium Tech Products</h3>
+        <p class="text-sm">We only offer high-quality gadgets and devices from top-tier brands with full warranties and support.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-[#F9F7F7] text-[#112D4E] rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Affordable Pricing</h3>
+        <p class="text-sm">Enjoy competitive pricing and seasonal discounts without compromising quality or service.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-[#F9F7F7] text-[#112D4E] rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+        <p class="text-sm">Our dedicated support team is available around the clock to assist you with any queries or concerns.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-[#F9F7F7] text-[#112D4E] rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Fast & Free Shipping</h3>
+        <p class="text-sm">We deliver your products quickly and safely — and shipping is free on most orders!</p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-[#F9F7F7] text-[#112D4E] rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Secure Payments</h3>
+        <p class="text-sm">Your information is safe with us — we use industry-standard encryption and trusted payment gateways.</p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="bg-[#F9F7F7] text-[#112D4E] rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Customer-Centric Policies</h3>
+        <p class="text-sm">Easy returns, helpful FAQs, and satisfaction guarantees make shopping stress-free.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="plan" class="bg-gray-100 py-12">
+  <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-center mb-12">Choose Your Plan</h1>
+      <div class="flex flex-wrap justify-center gap-8">
+          <!-- Basic Plan -->
+          <div class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm">
+              <div class="p-6">
+                  <h2 class="text-2xl font-bold mb-4">Basic Plan</h2>
+                  <p class="text-gray-700 mb-6">Perfect for individuals and small teams.</p>
+                  <ul class="mb-6">
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 1</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 2</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 3</li>
+                  </ul>
+                  <p class="text-3xl font-bold mb-4">$10/month</p>
+                  <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Choose Plan</a>
+              </div>
+          </div>
+          <!-- Professional Plan -->
+          <div class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm">
+              <div class="p-6">
+                  <h2 class="text-2xl font-bold mb-4">Professional Plan</h2>
+                  <p class="text-gray-700 mb-6">Ideal for growing businesses.</p>
+                  <ul class="mb-6">
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 1</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 2</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 3</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 4</li>
+                  </ul>
+                  <p class="text-3xl font-bold mb-4">$30/month</p>
+                  <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Choose Plan</a>
+              </div>
+          </div>
+          <!-- Enterprise Plan -->
+          <div class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden max-w-sm">
+              <div class="p-6">
+                  <h2 class="text-2xl font-bold mb-4">Enterprise Plan</h2>
+                  <p class="text-gray-700 mb-6">Best for large organizations.</p>
+                  <ul class="mb-6">
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 1</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 2</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 3</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 4</li>
+                      <li class="mb-2"><span class="font-semibold">✓</span> Feature 5</li>
+                  </ul>
+                  <p class="text-3xl font-bold mb-4">$100/month</p>
+                  <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Choose Plan</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="contact" class="bg-[#3F72AF] text-[#F9F7F7] py-12">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    
+    <!-- Brand & Tagline -->
+    <div>
+      <h3 class="text-2xl font-bold mb-3">Fine Store</h3>
+      <p class="text-sm opacity-80">Your trusted source for the latest and greatest in tech gadgets.</p>
+    </div>
+
+    <!-- Shop Links -->
+    <div>
+      <h4 class="font-semibold text-lg mb-3">Shop</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline hover:text-blue-200 transition">All Products</a></li>
+        <li><a href="#" class="hover:underline hover:text-blue-200 transition">Best Sellers</a></li>
+        <li><a href="#" class="hover:underline hover:text-blue-200 transition">New Arrivals</a></li>
+        <li><a href="#" class="hover:underline hover:text-blue-200 transition">Deals</a></li>
+      </ul>
+    </div>
+
+    <!-- Company Info -->
+    <div>
+      <h4 class="font-semibold text-lg mb-3">Company</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline hover:text-blue-200 transition">About Us</a></li>
+        <li><a href="#" class="hover:underline hover:text-blue-200 transition">Contact</a></li>
+        <li><a href="#" class="hover:underline hover:text-blue-200 transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline hover:text-blue-200 transition">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter Signup (Optional) -->
+    <div>
+      <h4 class="font-semibold text-lg mb-3">Join Our Newsletter</h4>
+      <p class="text-sm opacity-80 mb-4">Stay up to date with new releases and exclusive offers.</p>
+      <form class="flex flex-col gap-3">
+        <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-md text-[#112D4E]">
+        <button type="submit" class="bg-[#F9F7F7] text-[#112D4E] font-semibold px-4 py-2 rounded-md hover:bg-white transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-10 border-t border-blue-200/20 pt-6 text-center text-sm opacity-70">
+    © 2025 Fine Store. All rights reserved.
+  </div>
+</footer>
+<script>
+  const slider = document.getElementById('product-slider');
+
+  function slideLeft() {
+    slider.scrollBy({ left: -300, behavior: 'smooth' });
+  }
+
+  function slideRight() {
+    slider.scrollBy({ left: 300, behavior: 'smooth' });
+  }
+</script>
+
+
+
+
+
+<script>
+  document.getElementById('menu-btn').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+</html>
